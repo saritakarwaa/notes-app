@@ -1,0 +1,78 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.notes-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: flex-end;
+    gap: 15px;
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 900;
+}
+.container h1 img{
+    width: 70px;
+    margin: 5px;
+}
+.btn{
+    background: steelblue;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(29, 42, 77, 0.1);
+    outline: 0;
+    font-weight: 600;
+    border: 0;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+[contentEditable=true]:empty::before{
+    content: attr(placeholder);
+    opacity: 0.8;
+}
+.input-box{
+    position: relative;
+    width: 400px;
+    min-height: 150px;
+    border-radius: 8px ;
+    border: 1px solid #000;
+    box-shadow: 0 0 15px #d2d2d2;
+    background: #fff;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.note{
+    position: relative;
+    padding: 5px;
+    width: 420px;
+}
+.note img{
+    position: absolute;
+    width: 30px;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
